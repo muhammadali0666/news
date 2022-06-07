@@ -1,9 +1,10 @@
-const elMovieList = document.querySelector(".movie__list");
-const elResult = document.querySelector(".movie__result-num");
+const elNewsDiv = document.querySelector(".news__list");
+const elResult = document.querySelector(".news__result-num");
 
 elResult.textContent = daryoPostlari.length;
 
 for (let news of daryoPostlari) {
+  
 
   const newLi = document.createElement("li");
   const newImg = document.createElement("img");
@@ -30,7 +31,7 @@ for (let news of daryoPostlari) {
   newButton.textContent ="link";
   newImg.textContent = "photo"
 
-  elMovieList.appendChild(newLi);
+  elNewsDiv.appendChild(newLi);
   newLi.appendChild(newImg);
   newLi.appendChild(newDiv);
   newDiv.appendChild(newTitle);
